@@ -26,20 +26,19 @@ public class MG811Sample {
 
 	public static void main(String[] args) throws InterruptedException {
 		// ! [Interesting]
-		
+
 		// Instantiate an MG811 on analog pin A0, and digital pin D2 with an
 		// analog reference voltage of 5.0V
 		upm_mg811.MG811 sensor = new upm_mg811.MG811(0, 2, (float) 5.0);
-		  
+
 		// Every tenth of a second, sample the sensor and output it's
 		// detected CO2 concentration in parts per million (ppm)
 
-		while (true){
+		while (true) {
 			System.out.println("CO2 concentration in PPM: " + sensor.ppm());
 			Thread.sleep(100);
 		}
-		
+
 		// ! [Interesting]
 	}
 }
-

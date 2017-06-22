@@ -28,7 +28,7 @@ public class WheelEncoderSample {
 		// ! [Interesting]
 		// Instantiate a DFRobot Wheel Encoder on digital pin D2
 		upm_wheelencoder.WheelEncoder sensor = new upm_wheelencoder.WheelEncoder(2);
-		  
+
 		// set the counter to 0 and start counting
 		sensor.clearCounter();
 		sensor.startCounter();
@@ -36,10 +36,11 @@ public class WheelEncoderSample {
 		while (true) {
 			// output milliseconds passed and current sensor count
 			System.out.println("Millis: " + sensor.getMillis() + "; Count: " + sensor.counter());
-			Thread.sleep(1000);		
+			Thread.sleep(1000);
 		}
-		
-		//sensor.stopCounter();
+
+		// sensor.stopCounter();
 		// ! [Interesting]
 	}
 }
+

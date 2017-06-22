@@ -35,7 +35,7 @@ public class MQ6Sample {
 		ctx.setAverageReading(0);
 		ctx.setRunningAverage(0);
 		ctx.setAveragedOver(2);
-		
+
 		// Infinite loop, ends when script is cancelled
 		// Repeatedly, take a sample every 2 microseconds;
 		// find the average of 128 samples; and

@@ -29,12 +29,12 @@ public class LoudnessSample {
 		// Instantiate a Loudness sensor on analog pin A0, with an analog
 		// reference voltage of 5.0V
 		upm_loudness.Loudness loud = new upm_loudness.Loudness(0, (float) 5.0);
-		  
-		// Every tenth of a second, sample the loudness and output it's
-		// corresponding analog voltage. 
 
-		while (true){
-			System.out.println("Detected loudness (volts): " + loud.loudness());		      
+		// Every tenth of a second, sample the loudness and output it's
+		// corresponding analog voltage.
+
+		while (true) {
+			System.out.println("Detected loudness (volts): " + loud.loudness());
 			Thread.sleep(100);
 		}
 		// ! [Interesting]

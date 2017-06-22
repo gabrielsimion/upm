@@ -26,7 +26,7 @@ public class I2CLCD_EBOLEDSample {
 
 	public static void main(String[] args) throws InterruptedException {
 		// ! [Interesting]
-		
+
 		// Instantiate an Edison Block OLED using default values
 		upm_i2clcd.EBOLED lcd = new upm_i2clcd.EBOLED();
 
@@ -39,9 +39,9 @@ public class I2CLCD_EBOLEDSample {
 
 		System.out.println("Sleeping for 5 secconds...");
 		Thread.sleep(5000);
-		
+
 		lcd.delete();
-		
+
 		// ! [Interesting]
 	}
 }

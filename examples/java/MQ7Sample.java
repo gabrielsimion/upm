@@ -40,7 +40,7 @@ public class MQ7Sample {
 		// Repeatedly, take a sample every 2 microseconds;
 		// find the average of 128 samples; and
 		// print a running graph of asterisks as averages
-		
+
 		while (true) {
 			int len = sensor.getSampledWindow(2, buffer);
 
