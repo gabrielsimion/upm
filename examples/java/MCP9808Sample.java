@@ -67,7 +67,7 @@ public class MCP9808Sample {
 			switch (command) {
 			case 1:
 				System.out
-						.println("Temp: " + temp.getTemp() + " grade " + (temp.isCelsius() ? "Celsius" : "Fahrenheit"));
+						.println("Temp: " + temp.getTemp() + " degrees " + (temp.isCelsius() ? "Celsius" : "Fahrenheit"));
 				break;
 			case 2:
 				System.out.println("shutdown sensor (sleep mode)");
